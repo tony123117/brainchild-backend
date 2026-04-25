@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-resend.api_key = os.getenv("RESEND_API_KEY")
+resend.api_key = os.getenv("re_WuwNtqFK_35zNzCHP5XtkrqzJ393mQ52T")
 
 class ContactForm(BaseModel):
     user_name: str
