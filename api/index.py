@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # ✅ Correct env usage
-resend.api_key = os.getenv("re_WuwNtqFK_35zNzCHP5XtkrqzJ393mQ52T")
+resend.api_key = os.getenv("RESEND_API_KEY")
 
 # Data model
 class ContactForm(BaseModel):

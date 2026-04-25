@@ -2,3 +2,4 @@ resend
 fastapi
 uvicorn
 python-dotenv
+mangum
