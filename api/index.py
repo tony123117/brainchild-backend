@@ -30,14 +30,14 @@ class ContactForm(BaseModel):
 # ✅ Add root route (so homepage works)
 @app.get("/")
 def home():
-    return {"message": "Kayla School Backend Running 🚀"}
+    return {"message": "Brain Child School Backend Running 🚀"}
 
 # ✅ IMPORTANT: include /api
 @app.post("/api/send")
 async def send_email(form: ContactForm):
     try:
         r = resend.Emails.send({
-            "from": "Kayla School <onboarding@resend.dev>",
+            "from": "Brain Child <onboarding@resend.dev>",
             "to": ["arum200909@gmail.com"],
             "subject": f"New Inquiry from {form.user_name}",
             "html": f"""
